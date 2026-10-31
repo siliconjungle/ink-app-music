@@ -1,0 +1,88 @@
+{
+  "slug": "music",
+  "title": "Music",
+  "repository": "https://github.com/siliconjungle/ink-app-music",
+  "entry": "index.html",
+  "desktop": {
+    "entry": "music",
+    "icon": {
+      "svg": "icon.svg"
+    },
+    "fileTypes": [
+      "audio/*",
+      ".mp3",
+      ".m4a",
+      ".wav",
+      ".ogg",
+      ".flac",
+      ".aac",
+      ".opus"
+    ],
+    "dropTypes": [
+      "audio/*",
+      ".mp3",
+      ".m4a",
+      ".wav",
+      ".ogg",
+      ".flac",
+      ".aac",
+      ".opus"
+    ],
+    "window": {
+      "width": 860,
+      "height": 590
+    }
+  },
+  "capabilities": [
+    "world.read",
+    "world.write",
+    "desktop.open",
+    "media.playback"
+  ],
+  "commands": [
+    {
+      "id": "library",
+      "title": "Find music",
+      "description": "Browse or search the music library.",
+      "inputs": [
+        {
+          "name": "q",
+          "label": "Search",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "handler": {
+        "type": "open"
+      }
+    },
+    {
+      "id": "queue",
+      "title": "Show music queue",
+      "description": "Open the current playback queue.",
+      "inputs": [],
+      "handler": {
+        "type": "open"
+      }
+    },
+    {
+      "id": "play-pause",
+      "title": "Play or pause music",
+      "description": "Toggle the current track.",
+      "inputs": [],
+      "handler": {
+        "type": "open"
+      }
+    },
+    {
+      "id": "next",
+      "title": "Next track",
+      "description": "Skip to the next track.",
+      "inputs": [],
+      "handler": {
+        "type": "open"
+      }
+    }
+  ],
+  "commandsClient": "commands.mjs"
+}
