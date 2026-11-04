@@ -31,6 +31,18 @@
     "window": {
       "width": 860,
       "height": 590
+    },
+    "preview": {
+      "fileTypes": [
+        "audio/*",
+        ".mp3",
+        ".m4a",
+        ".wav",
+        ".ogg",
+        ".flac",
+        ".aac",
+        ".opus"
+      ]
     }
   },
   "capabilities": [
